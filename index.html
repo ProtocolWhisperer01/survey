@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>JS</title>
+
+        <!--viewport & config-->
+        <meta name="viewport" content="width=device-width,  initial-scale 1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+        <!--Link-->
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    
+    </head>
+    <body>
+        <h1>Survey!</h1>
+        <hr>
+        <p>We at X technologies would really love to hear your feedback, we would appreciate that if you take a moment for your time to fill out the survey below.</p>
+        <form action="#">
+            <fieldset>
+                <label>Enter your firstname: <input type="text" required /></label>
+                <label>Enter your lastname: <input type="text" required /></label>
+                <label>Enter your email: <input type="email" required /></label>
+                <label>Enter your password: <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required /></label>
+            </fieldset>
+            <fieldset>
+                <label for="pa"><input type="radio" id="pa" name="account" class="inline" /> Personal Account</label>
+                <label for="ba"><input type="radio" id="ba" name="account" class="inline" /> Business Account</label>
+                <label for="tc"><input type="checkbox" id="tc" class="inline" required /> I agree with the <a href="#">Terms and Conditions.</a></label>
+            </fieldset>
+            <fieldset>
+                <label>Kindly add your profile picture: <input type="file" accept="image/*" required /></label>
+                <label>Kindly enter your age (years):  <input type="number" max="120" min="18"> </label>
+                <label>How did you hear about us:
+                <select name="refer">
+                    <option disabled>Select an option</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Instagram</option>
+                    <option value="3">Snapchat</option>
+                    <option value="4">Linkedin</option>
+                    <option value="5">YouTube</option>
+                    <option value="6">Whatsapp</option>
+                </select>
+                </label>
+                <label>Share your opinion:
+                <textarea rows="3" cols="30" placeholder="How did you feel about our services..." name="opinion">
+
+                </textarea>             
+                </label>
+            </fieldset>
+            <input value="Submit" type="submit">
+            <br>
+            <br>
+        </form>
+        <footer>
+            <p>Thank you for participating! copyright 2022</p>
+        </footer>
+    </body>
+</html>
